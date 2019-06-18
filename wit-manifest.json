@@ -1,0 +1,22 @@
+[
+    {
+        "commit": "cdb7d8a0cd9a374f1cf8ff98c38585ff7e328c65",
+        "name": "api-generator-sifive",
+        "source": "git@github.com:sifive/api-generator-sifive.git"
+    },
+    {
+        "commit": "4c8910a7ed693cdde7b86db8307bcf9d57d6cb99",
+        "name": "fpga-shells",
+        "source": "git@github.com:sifive/fpga-shells.git"
+    },
+    {
+        "commit": "152eafed78299de92b8bc45a930b6164c698cc85",
+        "name": "sifive-blocks",
+        "source": "git@github.com:sifive/sifive-blocks.git"
+    },
+    {
+        "commit": "6a8db0404a667f8619ee5502aeb15b67b5abf3b9",
+        "name": "api-generator-sifive",
+        "source": "git@github.com:sifive/fpga-shells.git"
+    }
+]
