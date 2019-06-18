@@ -5,6 +5,11 @@
         "source": "git@github.com:sifive/api-generator-sifive.git"
     },
     {
+        "commit": "1ec9ccfb7de85902f544b9235350fd18068ad0ad",
+        "name": "nvidia-dla-blocks",
+        "source": "git@github.com:sifive/nvidia-dla-blocks.git"
+    },
+    {
         "commit": "ac061141ced718442a920ebee7b4d02418b70dc4",
         "name": "fpga-shells",
         "source": "git@github.com:sifive/fpga-shells.git"
