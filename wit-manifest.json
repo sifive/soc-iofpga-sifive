@@ -1,11 +1,11 @@
 [
     {
-        "commit": "cdb7d8a0cd9a374f1cf8ff98c38585ff7e328c65",
+        "commit": "6a8db0404a667f8619ee5502aeb15b67b5abf3b9",
         "name": "api-generator-sifive",
         "source": "git@github.com:sifive/api-generator-sifive.git"
     },
     {
-        "commit": "4c8910a7ed693cdde7b86db8307bcf9d57d6cb99",
+        "commit": "ac061141ced718442a920ebee7b4d02418b70dc4",
         "name": "fpga-shells",
         "source": "git@github.com:sifive/fpga-shells.git"
     },
@@ -15,8 +15,18 @@
         "source": "git@github.com:sifive/sifive-blocks.git"
     },
     {
-        "commit": "6a8db0404a667f8619ee5502aeb15b67b5abf3b9",
-        "name": "api-generator-sifive",
-        "source": "git@github.com:sifive/fpga-shells.git"
+        "commit": "e44e22beccdd5e1e43fd8a35f7c9c5687c821326",
+        "name": "rocket-chip",
+        "source": "git@github.com:freechipsproject/rocket-chip.git"
+    },
+    {
+        "commit": "e1aa5f3f5c0cdeb204047c3ca50801d9f7ea25f1",
+        "name": "chisel3",
+        "source": "git@github.com:freechipsproject/chisel3.git"
+    },
+    {
+        "commit": "228c9a4b7432ac52178d63b8f27fe064aec71e9c",
+        "name": "firrtl",
+        "source": "git@github.com:freechipsproject/firrtl.git"
     }
 ]

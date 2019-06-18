@@ -25,8 +25,6 @@ import sifive.blocks.devices.pinctrl.{BasePin}
 import sifive.fpgashells.shell._
 import sifive.fpgashells.clocks._
 
-case object PeripheryMaskROMKey extends Field[Seq[MaskROMParams]](Nil)
-
 object PinGen {
   def apply(): BasePin = {
     new BasePin()
@@ -66,15 +64,6 @@ class DevKitWrapper()(implicit p: Parameters) extends LazyModule
 
 case object DevKitFPGAFrequencyKey extends Field[Double](100.0)
 
-trait HasPeripheryMaskROMSlave { this: BaseSubsystem =>
-  val maskROMParams = p(PeripheryMaskROMKey)
-  val maskROMs = maskROMParams map { params =>
-    val maskROM = LazyModule(new TLMaskROM(params))
-    sbus.toFixedWidthSingleBeatSlave(maskROM.beatBytes, Some("MaskROM")) { maskROM.node }
-    maskROM
-  }
-}
-
 class DevKitFPGADesign(wranglerNode: ClockAdapterNode, corePLL: PLLNode)(implicit p: Parameters) extends RocketSubsystem
     with HasPeripheryMaskROMSlave
     with HasPeripheryDebug
@@ -113,7 +102,7 @@ class DevKitFPGADesign(wranglerNode: ClockAdapterNode, corePLL: PLLNode)(implici
   }
 
   // hook the first PCIe the board has
-  val pcies = p(PCIeOverlayKey).headOption.map(_(PCIeOverlayParams(wranglerNode)))
+  val pcies = p(PCIeOverlayKey).headOption.map(_(PCIeOverlayParams(wranglerNode, corePLL = corePLL)))
   pcies.zipWithIndex.map { case((pcieNode, pcieInt), i) =>
     val pciename = Some(s"pcie_$i")
     sbus.fromMaster(pciename) { pcieNode }
