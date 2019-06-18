@@ -6,13 +6,6 @@ def scalacOpts =
   "-Xsource:2.11",
   Nil
 
-global def nvdlaScalaModule =
-  def scalaVersion = rocketchipScalaModule.getScalaModuleScalaVersion
-  makeScalaModule "nvdla" "nvidia-dla-blocks" scalaVersion
-  | setScalaModuleDeps (sifiveBlocksScalaModule, rocketchipScalaModule, Nil)
-  | setScalaModuleScalacOptions scalacOpts
-  | addMacrosParadiseCompilerPlugin
-
 global def fpgaShellsScalaModule =
   def scalaVersion = rocketchipScalaModule.getScalaModuleScalaVersion
   makeScalaModule "fpga-shells" "fpga-shells" scalaVersion
@@ -48,6 +41,11 @@ global def nvdlaLargeScalaBlock =
   def scalaModule = nvdlaScalaModule
   def config = "sifive.freedom.unleashed.WithNVDLALarge"
   makeScalaBlock scalaModule config
+
+global def nvdlaSmallScalaBlock =
+  def config = "sifive.freedom.unleashed.WithNVDLASmall"
+  nvdlaLargeScalaBlock
+  | setScalaBlockConfig config
 
 global def ioFPGAVCU118WithNVDLALargeDUTPlan =
   def name = "ioFPGAVCU118WithNVDLALarge"

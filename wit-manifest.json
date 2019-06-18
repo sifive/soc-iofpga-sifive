@@ -5,7 +5,7 @@
         "source": "git@github.com:sifive/api-generator-sifive.git"
     },
     {
-        "commit": "1ec9ccfb7de85902f544b9235350fd18068ad0ad",
+        "commit": "116b33ae7f9b95538767bc7b00e9daf88a1a4c48",
         "name": "nvidia-dla-blocks",
         "source": "git@github.com:sifive/nvidia-dla-blocks.git"
     },
