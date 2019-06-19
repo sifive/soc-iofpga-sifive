@@ -335,11 +335,11 @@ publish vivadoVsrcHooks =
     source "nvidia-dla-blocks/vsrc/defines/undefs.v",
     Nil
 
-  makeBlackBnvidia-dla-blocks name nvdlaSources, Nil
+  makeBlackBoxHook name nvdlaSources, Nil
 
-publish vivanvidia-dla-blocksHooks =
-  def name =nvidia-dla-blocksa_small"
-  def nvdlaSnvidia-dla-blocks _ =
+publish vivadoVsrcHooks =
+  def name = "nvdla_small"
+  def nvdlaSources _ =
     source "nvidia-dla-blocks/vsrc/defines/defs.v",
     source "nvidia-dla-blocks/vsrc/small/vmod/vlibs/CKLNQD12.v",
     source "nvidia-dla-blocks/vsrc/small/vmod/rams/fpga/small_rams/nv_ram_rwsp_80x65.v",
