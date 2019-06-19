@@ -10,7 +10,7 @@
         "source": "git@github.com:sifive/nvidia-dla-blocks.git"
     },
     {
-        "commit": "501f042217eacf6bc92b21651a432334fbf78339",
+        "commit": "22d683ba75be4eb26c6d6b15df02e992b1edc676",
         "name": "fpga-shells",
         "source": "git@github.com:sifive/fpga-shells.git"
     },
