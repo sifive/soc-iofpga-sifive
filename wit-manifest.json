@@ -1,6 +1,6 @@
 [
     {
-        "commit": "6a8db0404a667f8619ee5502aeb15b67b5abf3b9",
+        "commit": "9d4149e47bd021bdd2de61ce577a2f858724ab19",
         "name": "api-generator-sifive",
         "source": "git@github.com:sifive/api-generator-sifive.git"
     },
@@ -10,7 +10,7 @@
         "source": "git@github.com:sifive/nvidia-dla-blocks.git"
     },
     {
-        "commit": "56acdc90357df8510e214608d3ea9ea85bbf171c",
+        "commit": "501f042217eacf6bc92b21651a432334fbf78339",
         "name": "fpga-shells",
         "source": "git@github.com:sifive/fpga-shells.git"
     },

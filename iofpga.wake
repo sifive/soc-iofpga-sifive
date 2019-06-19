@@ -6,13 +6,6 @@ def scalacOpts =
   "-Xsource:2.11",
   Nil
 
-global def fpgaShellsScalaModule =
-  def scalaVersion = rocketchipScalaModule.getScalaModuleScalaVersion
-  makeScalaModule "fpga-shells" "fpga-shells" scalaVersion
-  | setScalaModuleDeps (sifiveBlocksScalaModule, rocketchipScalaModule, Nil)
-  | setScalaModuleScalacOptions scalacOpts
-  | addMacrosParadiseCompilerPlugin
-
 global def ioFPGAScalaModule =
   def scalaVersion = rocketchipScalaModule.getScalaModuleScalaVersion
   makeScalaModule "io-fpga" here scalaVersion
