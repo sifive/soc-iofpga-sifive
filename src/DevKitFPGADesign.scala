@@ -64,6 +64,17 @@ class DevKitWrapper()(implicit p: Parameters) extends LazyModule
 
 case object DevKitFPGAFrequencyKey extends Field[Double](100.0)
 
+case object PeripheryMaskROMKey extends Field[Seq[MaskROMParams]](Nil)
+
+trait HasPeripheryMaskROMSlave { this: BaseSubsystem =>
+  val maskROMParams = p(PeripheryMaskROMKey)
+  val maskROMs = maskROMParams map { params =>
+    val maskROM = LazyModule(new TLMaskROM(params))
+    sbus.toFixedWidthSingleBeatSlave(maskROM.beatBytes, Some("MaskROM")) { maskROM.node }
+    maskROM
+  }
+}
+
 class DevKitFPGADesign(wranglerNode: ClockAdapterNode, corePLL: PLLNode)(implicit p: Parameters) extends RocketSubsystem
     with HasPeripheryMaskROMSlave
     with HasPeripheryDebug
