@@ -1,21 +1,21 @@
 [
     {
-        "commit": "92dd920ef3f07d94d79bbc16d4362edd16b24b30",
+        "commit": "718d51e76eee5ea5c40c99a17ab95b6b6c6d099d",
         "name": "api-generator-sifive",
         "source": "git@github.com:sifive/api-generator-sifive.git"
     },
     {
-        "commit": "332bfff8961de8ef1034fd5649da459c620bf760",
+        "commit": "24541005a555b7540ec7c5cb073c130faf70a469",
         "name": "block-nvdla-sifive",
         "source": "git@github.com:sifive/block-nvdla-sifive.git"
     },
     {
-        "commit": "22d683ba75be4eb26c6d6b15df02e992b1edc676",
+        "commit": "ef278419f5866f7530ec8e56da9fffbc6e75a3fd",
         "name": "fpga-shells",
         "source": "git@github.com:sifive/fpga-shells.git"
     },
     {
-        "commit": "152eafed78299de92b8bc45a930b6164c698cc85",
+        "commit": "58a2f90a376aaa07e73532b86cfcc686733a8893",
         "name": "sifive-blocks",
         "source": "git@github.com:sifive/sifive-blocks.git"
     },
