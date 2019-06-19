@@ -6,8 +6,8 @@
     },
     {
         "commit": "332bfff8961de8ef1034fd5649da459c620bf760",
-        "name": "nvidia-dla-blocks",
-        "source": "git@github.com:sifive/nvidia-dla-blocks.git"
+        "name": "block-nvdla-sifive",
+        "source": "git@github.com:sifive/block-nvdla-sifive.git"
     },
     {
         "commit": "22d683ba75be4eb26c6d6b15df02e992b1edc676",
