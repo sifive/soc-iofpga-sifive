@@ -10,7 +10,7 @@
         "source": "git@github.com:sifive/block-nvdla-sifive.git"
     },
     {
-        "commit": "1f6ac273be2a3fd0d1ca0ff2207801d5d49e52a5",
+        "commit": "2caf8a943014f544ff938e6950d0660c81ca349d",
         "name": "fpga-shells",
         "source": "git@github.com:sifive/fpga-shells.git"
     },
